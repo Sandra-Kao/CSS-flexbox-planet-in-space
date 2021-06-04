@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Odibee+Sans&display=swap");
+:root {
+  --image-space-black: url(https://sandra-kao.github.io/CSS-UI-template/img/space/space-black.jpg);
+  --image-space-blue: url(https://sandra-kao.github.io/CSS-UI-template/img/space/space-blue.jpg);
+  --image-space-light: url(https://sandra-kao.github.io/CSS-UI-template/img/space/space-light.jpg);
+  --image-space-orange: url(https://sandra-kao.github.io/CSS-UI-template/img/space/space-orange.jpg);
+  --image-dirt-mercury: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-mercury.jpg);
+  --image-dirt-venus: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-venus.jpg);
+  --image-dirt-earth: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-earth.jpg);
+  --image-dirt-mars: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-mars.jpg);
+  --image-dirt-jupiter: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-jupiter.jpg);
+  --image-dirt-saturn: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-saturn.jpg);
+  --image-dirt-uranus: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-uranus.jpg);
+  --color-white: #fff;
+  --color-gray-darker: #787878;
+  --color-gray-darkest: #323233;
+  --color-vivid-blue-darker: #006498;
+  --color-vivid-blue-lightest: #daeef9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 8px;
+  height: 100%;
+  /*   overflow: hidden; */
+  color: var(--color-white);
+  background-image: url(https://sandra-kao.github.io/CSS-UI-template/img/space/space-blue.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.focus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.focus__wrapper {
+  width: calc((100% - 16 * 3rem - 16px) / 4);
+  min-width: 40rem;
+  padding: 1.5rem;
+  margin: 3rem;
+  border: 2px solid var(--color-gray-darkest);
+  background-color: #78787830;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 990px) {
+  .focus__wrapper {
+    width: calc((100% - 8 * 3rem - 16px) / 2);
+  }
+}
+@media (max-width: 380px) {
+  .focus__wrapper {
+    width: 75%;
+  }
+}
+
+.focus__circle.mercury {
+  background: var(--image-dirt-mercury);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: auto 220%;
+  background-position: center;
+  animation: planetRotate 22s linear infinite;
+  transform: rotate(0.034deg);
+}
+
+.focus__circle.venus {
+  background: var(--image-dirt-venus);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: auto 100%;
+  background-position: center;
+  animation: planetRotate 22s linear infinite;
+  transform: rotate(177.3deg);
+  margin-left: 0.8rem;
+}
+
+.focus__circle.earth {
+  background: var(--image-dirt-earth);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: auto 100%;
+  background-position: center;
+  animation: planetRotate 22s linear infinite;
+  transform: rotate(23.26deg);
+}
+
+.focus__circle.mars {
+  background: var(--image-dirt-mars);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: auto 100%;
+  background-position: center;
+  animation: planetRotate 22s linear infinite;
+  transform: rotate(25.2deg);
+}
+
+.focus__circle.jupiter {
+  background: var(--image-dirt-jupiter);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: auto 100%;
+  background-position: center;
+  animation: planetRotate 22s linear infinite;
+  transform: rotate(3.1deg);
+}
+
+.focus__circle.saturn {
+  background: var(--image-dirt-saturn);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: auto 100%;
+  background-position: center;
+  animation: planetRotate 22s linear infinite;
+  transform: rotate(26.7deg);
+}
+
+.focus__circle {
+  font-size: 38rem;
+  line-height: 16rem;
+  width: 20rem;
+  height: 20rem;
+  margin-left: -2rem;
+}
+
+.focus__title {
+  font-size: 3.4rem;
+  background: -webkit-linear-gradient(
+    var(--color-white),
+    var(--color-gray-darkest)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Megrim", cursive;
+  letter-spacing: 0.4rem;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.focus__paragraph {
+  font-size: 2.1rem;
+  font-family: "Odibee Sans", cursive;
+  letter-spacing: 0.3rem;
+  padding: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.focus__link,
+.focus__link:link,
+.focus__link:visited {
+  display: flex;
+  width: 12rem;
+  height: 3.2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--color-gray-darker);
+  border-radius: 0.2rem;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.focus__link:hover {
+  animation: linkRotate 5s ease-in-out;
+  color: var(--color-gray-darker);
+  font-weight: 800;
+}
+
+.focus__link:active {
+}
+
+@keyframes planetRotate {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -900% center;
+  }
+}
+@keyframes linkRotate {
+  0% {
+    border-radius: 0.2rem;
+  }
+  30% {
+    border-radius: 2rem;
+    background-color: var(--color-white);
+  }
+  100% {
+    border-radius: 2rem;
+    background-color: var(--color-white);
+  }
+}
