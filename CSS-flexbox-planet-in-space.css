@@ -1,16 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Megrim&family=Odibee+Sans&display=swap");
 :root {
-  --image-space-black: url(https://sandra-kao.github.io/CSS-UI-template/img/space/space-black.jpg);
   --image-space-blue: url(https://sandra-kao.github.io/CSS-UI-template/img/space/space-blue.jpg);
-  --image-space-light: url(https://sandra-kao.github.io/CSS-UI-template/img/space/space-light.jpg);
-  --image-space-orange: url(https://sandra-kao.github.io/CSS-UI-template/img/space/space-orange.jpg);
-  --image-dirt-mercury: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-mercury.jpg);
-  --image-dirt-venus: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-venus.jpg);
-  --image-dirt-earth: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-earth.jpg);
-  --image-dirt-mars: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-mars.jpg);
-  --image-dirt-jupiter: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-jupiter.jpg);
-  --image-dirt-saturn: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-saturn.jpg);
-  --image-dirt-uranus: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-uranus.jpg);
+  --image-dirt-mercury: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-mercury.min.jpg);
+  --image-dirt-venus: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-venus.min.jpg);
+  --image-dirt-earth: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-earth.min.jpg);
+  --image-dirt-mars: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-mars.min.jpg?min);
+  --image-dirt-jupiter: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-jupiter.min.jpg);
+  --image-dirt-saturn: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-saturn.min.jpg);
+  --image-dirt-uranus: url(https://sandra-kao.github.io/CSS-UI-template/img/dirt-wallpaper/dirt-uranus.min.jpg);
   --color-white: #fff;
   --color-gray-darker: #787878;
   --color-gray-darkest: #323233;
@@ -137,11 +134,8 @@ html {
 }
 
 .focus__title {
-  font-size: 3.4rem;
-  background: -webkit-linear-gradient(
-    var(--color-white),
-    var(--color-gray-darkest)
-  );
+  font-size: 4.2rem;
+  background: -webkit-linear-gradient(var(--color-white), #deddbb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Megrim", cursive;
